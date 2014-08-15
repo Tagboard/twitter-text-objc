@@ -12,13 +12,13 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
+typedef NS_ENUM(NSInteger, TwitterTextEntityType) {
     TwitterTextEntityURL,
     TwitterTextEntityScreenName,
     TwitterTextEntityHashtag,
     TwitterTextEntityListName,
     TwitterTextEntitySymbol,
-} TwitterTextEntityType;
+};
 
 @interface TwitterTextEntity : NSObject
 
